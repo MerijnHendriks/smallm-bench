@@ -61,6 +61,7 @@ Qwen 2.5                     | Instruct | 0.5B       | F16        | 8192        
 Qwen 2.5                     | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/Qwen2.5-1.5B-Instruct-GGUF?show_file_info=Qwen2.5-1.5B-Instruct.Q8_0.gguf)
 Qwen 2.5                     | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-GGUF?show_file_info=Qwen2.5-3B-Instruct.Q4_K_M.gguf)
 Qwen 2.5 VL                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Qwen2.5-VL-3B-Instruct-GGUF?show_file_info=Qwen2.5-VL-3B-Instruct.Q4_K_M.gguf)
+Qwen 2.5 Omni                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Qwen2.5-Omni-3B-GGUF?show_file_info=Qwen2.5-Omni-3B-Q4_K_M.gguf)
 Qwen 3                       | Instruct | 0.6B       | BF16       | 8192        | [link](https://huggingface.co/unsloth/Qwen3-0.6B-GGUF?show_file_info=Qwen3-0.6B-BF16.gguf)
 Qwen 3                       | Instruct | 1.7B       | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/Qwen3-1.7B-GGUF?show_file_info=Qwen3-1.7B-Q8_0.gguf)
 Qwen 3                       | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF?show_file_info=Qwen3-4B-Instruct-2507-Q4_K_M.gguf)
