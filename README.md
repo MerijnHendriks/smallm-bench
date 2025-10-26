@@ -110,3 +110,12 @@ Koboldcpp:
 - FlashAttention: off
 - KV Cache: F16
 - Guidance: on
+
+### Methodology
+
+1. Boot the laptop
+2. Wait for 5 minutes to let windows do it's thing
+3. Open koboldcpp to the left, task manager to the right in performance tab
+4. Open the model config, set backend
+5. Run benchmark
+6. Save results using notepad and close everything.
