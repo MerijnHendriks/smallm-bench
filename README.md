@@ -3,6 +3,19 @@
 For laughs and giggles I wanted to see how well my super weak laptop without
 dGPU can run LLMs, using the benchmark feature of Koboldcpp.
 
+## Results
+**Model**                    | **Params** | **Processing Time** | **Processing Speed** | **Generation Time** | **Generation Speed** | **Total Time**
+---------------------------- | ---------- | ------------------- | -------------------- | ------------------- | -------------------- | --------------
+AceInstruct                  | 1.5B       | 1117.239s           | 7.24T/s              | 179.753s            | 0.56T/s              | 1296.992s
+Deepseek R1 Distill Qwen     | 1.5B       | 1168.520s           | 6.92T/s              | 184.623s            | 0.54T/s              | 1353.143s
+MobileLLM R1                 | 360M       | 93.758s             | 42.62T/s             | 62.756s             | 1.59T/s              | 156.514s
+MobileLLM R1                 | 950M       | 320.887s            | 12.45T/s             | 143.070s            | 0.70T/s              | 463.957s
+Falcon3                      | 1B         | 864.889s            | 9.36T/s              | 148.107s            | 0.68T/s              | 1012.996s
+Falcon3                      | 3B         | 1803.937s           | 4.49T/s              | 315.585s            | 0.32T/s              | 2119.522s
+Falcon H1                    | 0.5B       | 1909.122s           | 4.24T/s              | 70.764s             | 1.41T/s              | 1979.886s
+Falcon H1                    | 1.5B       | 1400.546s           | 5.78T/s              | 171.564s            | 0.58T/s              | 1572.110s
+Falcon H1                    | 3B         | 3170.326s           | 2.55T/s              | 313.260s            | 0.32T/s              | 3483.586s
+
 ## Models
 
 ### Tested
@@ -11,6 +24,7 @@ For each model I use different context sizes. See Models table.
 
 **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 ---------------------------- | -------- | ---------- | ---------- | ----------- | --------
+AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
 Deepseek R1 Distill Qwen     | Hybrid   | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF?show_file_info=DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf)
 MobileLLM R1                 | Instruct | 360M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-360M-GGUF?show_file_info=facebook.MobileLLM-R1-360M.f16.gguf)    
 MobileLLM R1                 | Instruct | 950M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-950M-GGUF?show_file_info=facebook.MobileLLM-R1-950M.f16.gguf)
@@ -24,7 +38,6 @@ Falcon H1                    | Instruct | 3B         | Q4_K_M     | 8192        
 
 **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 -----------------------------| -------- | ---------- | ---------- | ----------- | --------
-AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
 Gemma 2 it                   | Instruct | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/gemma-2-2b-it-GGUF?show_file_info=gemma-2-2b-it.Q8_0.gguf)
 Gemma 3 it                   | Instruct | 270M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-270m-it-GGUF?show_file_info=gemma-3-270m-it-F16.gguf)
 Gemma 3 it                   | Instruct | 1B         | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-1b-it-GGUF?show_file_info=gemma-3-1b-it-BF16.gguf)
