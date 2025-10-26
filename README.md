@@ -3,21 +3,6 @@
 For laughs and giggles I wanted to see how well my super weak laptop without
 dGPU can run LLMs, using the benchmark feature of Koboldcpp.
 
-## Rules
-
-Only models that fit inside 5.3GB RAM (7.8GB total, windows taking 2.5GB)
-and are available for download on [HuggingFace](https://huggingface.co) are
-allowed.
-
-I limit myself to the following GUFF authors (in order of preference):
-
-1. unsloth
-2. mradermacher
-3. DevQuasar
-
-If supported context size is larger than 8192, I use 8192. If lower, I use
-that value.
-
 ## Models
 
 ### Tested
@@ -110,6 +95,21 @@ Koboldcpp:
 - FlashAttention: off
 - KV Cache: F16
 - Guidance: on
+
+### Model selection
+
+Only models that fit inside 5.3GB RAM (7.8GB total, windows taking 2.5GB)
+and are available for download on [HuggingFace](https://huggingface.co) as
+GUFF are allowed.
+
+I limit myself to the following GUFF authors (in order of preference):
+
+1. unsloth
+2. mradermacher
+3. DevQuasar
+
+If supported context size is larger than 8192, I use 8192. If lower, I use
+that value.
 
 ### Methodology
 
