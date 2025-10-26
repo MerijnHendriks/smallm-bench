@@ -39,7 +39,8 @@ Falcon H1                    | Instruct | 3B         | Q4_K_M     | 8192        
 
 **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 -----------------------------| -------- | ---------- | ---------- | ----------- | --------
-Gemma 2 it                   | Instruct | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/gemma-2-2b-it-GGUF)
+AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
+Gemma 2 it                   | Instruct | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/gemma-2-2b-it-GGUF?show_file_info=gemma-2-2b-it.Q8_0.gguf))
 Gemma 3 it                   | Instruct | 270M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-270m-it-GGUF?show_file_info=gemma-3-270m-it-F16.gguf)
 Gemma 3 it                   | Instruct | 1B         | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-1b-it-GGUF?show_file_info=gemma-3-1b-it-BF16.gguf)
 Gemma 3 it                   | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/gemma-3-4b-it-GGUF?show_file_info=gemma-3-4b-it-Q4_K_M.gguf)
@@ -47,8 +48,12 @@ Gemma 3n it                  | Instruct | 2B         | Q4_K_M     | 8192        
 GPT 2                        | Instruct | 355M       | F16        | 1024        | [link](https://huggingface.co/mradermacher/gpt2-medium-GGUF?show_file_info=gpt2-medium.f16.gguf)
 GPT 2                        | Instruct | 774M       | F16        | 1024        | [link](https://huggingface.co/mradermacher/gpt2-large-GGUF?show_file_info=gpt2-large.f16.gguf)
 GPT 2                        | Instruct | 1.5B       | Q8_0       | 1024        | [link](https://huggingface.co/mradermacher/gpt2-xl-GGUF?show_file_info=gpt2-xl.Q8_0.gguf)
-Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
+Granite 3.1                  | Instruct | 3B A800M   | Q4_K_M     | 8192        | [link](https://huggingface.co/DevQuasar/ibm-granite.granite-3.1-3b-a800m-instruct-GGUF?show_file_info=ibm-granite.granite-3.1-3b-a800m-instruct.Q4_K_M.gguf)
+Granite 3.1                  | Instruct | 1B A400M   | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-1b-a400m-instruct-GGUF?show_file_info=granite-3.1-1b-a400m-instruct.f16.gguf)
+Granite 3.1                  | Instruct | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-2b-instruct-GGUF?show_file_info=granite-3.1-2b-instruct.Q8_0.gguf)
+Granite 3.1                  | Hybrid   | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.2-2b-instruct-GGUF?show_file_info=granite-3.2-2b-instruct.Q8_0.gguf)
 Granite 4.0                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-micro-GGUF?show_file_info=granite-4.0-micro-Q4_K_M.gguf)
+Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
 Llama 3.1 Nemotron Nano v1.1 | Hybrid   | 4B    | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Llama-3.1-Nemotron-Nano-4B-v1.1-GGUF?show_file_info=Llama-3.1-Nemotron-Nano-4B-v1.1.Q4_K_M.gguf)
 Llama 3.2                    | Instruct | 1B         | F16        | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF?show_file_info=Llama-3.2-1B-Instruct-F16.gguf)
 Llama 3.2                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF?show_file_info=Llama-3.2-3B-Instruct-Q4_K_M.gguf)
