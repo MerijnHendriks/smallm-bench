@@ -49,7 +49,7 @@ GPT 2                        | Instruct | 774M       | F16        | 1024        
 GPT 2                        | Instruct | 1.5B       | Q8_0       | 1024        | [link](https://huggingface.co/mradermacher/gpt2-xl-GGUF?show_file_info=gpt2-xl.Q8_0.gguf)
 Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
 Granite 4.0                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-micro-GGUF?show_file_info=granite-4.0-micro-Q4_K_M.gguf)
-Llama 3.1 Nemotron Nano v1.1 | Instruct | 4B    | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Llama-3.1-Nemotron-Nano-4B-v1.1-GGUF?show_file_info=Llama-3.1-Nemotron-Nano-4B-v1.1.Q4_K_M.gguf)
+Llama 3.1 Nemotron Nano v1.1 | Hybrid   | 4B    | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Llama-3.1-Nemotron-Nano-4B-v1.1-GGUF?show_file_info=Llama-3.1-Nemotron-Nano-4B-v1.1.Q4_K_M.gguf)
 Llama 3.2                    | Instruct | 1B         | F16        | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF?show_file_info=Llama-3.2-1B-Instruct-F16.gguf)
 Llama 3.2                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF?show_file_info=Llama-3.2-3B-Instruct-Q4_K_M.gguf)
 OLMo                         | Instruct | 1B         | F16        | 4096        | [link](https://huggingface.co/mradermacher/OLMo-1B-0724-hf-GGUF?show_file_info=OLMo-1B-0724-hf.f16.gguf)
