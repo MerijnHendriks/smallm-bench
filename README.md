@@ -25,7 +25,7 @@ Falcon H1                    | Instruct | 3B         | Q4_K_M     | 8192        
 **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 -----------------------------| -------- | ---------- | ---------- | ----------- | --------
 AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
-Gemma 2 it                   | Instruct | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/gemma-2-2b-it-GGUF?show_file_info=gemma-2-2b-it.Q8_0.gguf))
+Gemma 2 it                   | Instruct | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/gemma-2-2b-it-GGUF?show_file_info=gemma-2-2b-it.Q8_0.gguf)
 Gemma 3 it                   | Instruct | 270M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-270m-it-GGUF?show_file_info=gemma-3-270m-it-F16.gguf)
 Gemma 3 it                   | Instruct | 1B         | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-1b-it-GGUF?show_file_info=gemma-3-1b-it-BF16.gguf)
 Gemma 3 it                   | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/gemma-3-4b-it-GGUF?show_file_info=gemma-3-4b-it-Q4_K_M.gguf)
