@@ -108,8 +108,8 @@ I limit myself to the following GUFF authors (in order of preference):
 2. mradermacher
 3. DevQuasar
 
-If supported context size is larger than 8192, I use 8192. If lower, I use
-that value.
+If supported context size is larger than 8192, I use 8192. If lower, I use that
+value.
 
 ### Methodology
 
@@ -119,3 +119,8 @@ that value.
 4. Open the model config, set backend
 5. Run benchmark
 6. Save results using notepad and close everything.
+
+### Limitations
+
+Due to the amount of time required to run each model, I am only able to do one
+run per model.
