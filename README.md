@@ -1,9 +1,10 @@
 # Small LLM Tests
 
-For laughs and giggles I wanted to see how well my super weak laptop without
-dGPU can run LLMs, using the benchmark feature of Koboldcpp.
+For laughs and giggles I wanted to see how "well" my super weak laptop without
+dGPU nor AVX/AVX2 support can run LLMs.
 
 ## Results
+
 **Model**                    | **Params** | **Processing Time** | **Processing Speed** | **Generation Time** | **Generation Speed** | **Total Time**
 ---------------------------- | ---------- | ------------------- | -------------------- | ------------------- | -------------------- | --------------
 AceInstruct                  | 1.5B       | 1117.239s           | 7.24T/s              | 179.753s            | 0.56T/s              | 1296.992s
@@ -90,8 +91,10 @@ TinyLlama v1.1               | Instruct | 1.1B       | F16        | 2048        
 - Device: ASUS Vivobook E210MA
 - CPU: Intel N5000
 - GPU: Intel UHD 605
-- RAM: 8GB DDR4 2400MHz (single-channel)
+- RAM: 8GB DDR4 2400MHz (single-channel, soldered)
 - SSD: Intel 660P 512GB
+
+It's always connected to charger while running benchmarks.
 
 ### Software
 
@@ -100,9 +103,11 @@ Windows:
 - Version: 24H2
 - OS build: 26100.6899
 - Experience: Windows Feature Experience Pack 1000.26100.253.0
+- Power profile: Performance
 
 GPU Driver:
 - Intel Graphics Driver 31.0.101.2137
+- Power profile: Performance
 
 Koboldcpp:
 - Version: 1.100.1
@@ -116,6 +121,12 @@ Koboldcpp:
 - FlashAttention: off
 - KV Cache: F16
 - Guidance: on
+
+Notes: 
+- No other software is installed on the machine
+- Windows defender is not actively running
+- Airplane mode on
+- Wifi/bluetooth off
 
 ### Model selection
 
