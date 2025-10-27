@@ -61,7 +61,7 @@ Granite 3.1                  | Instruct | 2B         | F16        | 8192        
 Granite 3.1                  | Hybrid   | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.2-2b-instruct-GGUF?show_file_info=granite-3.2-2b-instruct.Q8_0.gguf)
 Granite 4.0                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-micro-GGUF?show_file_info=granite-4.0-micro-Q4_K_M.gguf)
 Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
-Llama 3.1 Nemotron Nano v1.1 | Hybrid   | 4B    | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Llama-3.1-Nemotron-Nano-4B-v1.1-GGUF?show_file_info=Llama-3.1-Nemotron-Nano-4B-v1.1.Q4_K_M.gguf)
+Llama 3.1 Nemotron Nano v1.1 | Hybrid   | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Llama-3.1-Nemotron-Nano-4B-v1.1-GGUF?show_file_info=Llama-3.1-Nemotron-Nano-4B-v1.1.Q4_K_M.gguf)
 Llama 3.2                    | Instruct | 1B         | F16        | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF?show_file_info=Llama-3.2-1B-Instruct-F16.gguf)
 Llama 3.2                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF?show_file_info=Llama-3.2-3B-Instruct-Q4_K_M.gguf)
 OLMo                         | Instruct | 1B         | F16        | 4096        | [link](https://huggingface.co/mradermacher/OLMo-1B-0724-hf-GGUF?show_file_info=OLMo-1B-0724-hf.f16.gguf)
@@ -81,7 +81,7 @@ Qwen 3                       | Thinking | 4B         | Q4_K_M     | 8192        
 SmallThinker                 | Instruct | 4B A0.6B   | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/SmallThinker-4BA0.6B-Instruct-GGUF?show_file_info=SmallThinker-4BA0.6B-Instruct.Q4_K_M.gguf)
 SmolLM 2                     | Instruct | 360M       | F16        | 8192        | [link](https://huggingface.co/unsloth/SmolLM2-360M-Instruct-GGUF?show_file_info=SmolLM2-360M-Instruct-F16.gguf)
 SmolLM 2                     | Instruct | 1.7B       | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/SmolLM2-1.7B-Instruct-GGUF?show_file_info=SmolLM2-1.7B-Instruct-Q8_0.gguf)
-SmolLM 3                     | Hybrid | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/SmolLM3-3B-GGUF?show_file_info=SmolLM3-3B-Q4_K_M.gguf)
+SmolLM 3                     | Hybrid   | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/SmolLM3-3B-GGUF?show_file_info=SmolLM3-3B-Q4_K_M.gguf)
 TinyLlama v1.1               | Instruct | 1.1B       | F16        | 2048        | [link](https://huggingface.co/mradermacher/TinyLlama_v1.1-GGUF?show_file_info=TinyLlama_v1.1.f16.gguf)
 
 ## Testing environment
