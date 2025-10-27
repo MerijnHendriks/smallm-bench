@@ -12,9 +12,17 @@ MobileLLM R1                 | 360M       | 93.758s             | 42.62T/s      
 MobileLLM R1                 | 950M       | 320.887s            | 12.45T/s             | 143.070s            | 0.70T/s              | 463.957s
 Falcon3                      | 1B         | 864.889s            | 9.36T/s              | 148.107s            | 0.68T/s              | 1012.996s
 Falcon3                      | 3B         | 1803.937s           | 4.49T/s              | 315.585s            | 0.32T/s              | 2119.522s
-Falcon H1                    | 0.5B       | 1909.122s           | 4.24T/s              | 70.764s             | 1.41T/s              | 1979.886s
-Falcon H1                    | 1.5B       | 1400.546s           | 5.78T/s              | 171.564s            | 0.58T/s              | 1572.110s
+Falcon H1                    | 0.5B       | 661.565s            | 12.23T/s             | 131.768s            | 0.76T/s              | 793.333s
+Falcon H1                    | 1.5B       | 1463.552s           | 5.53T/s              | 172.069s            | 0.58T/s              | 1635.621s
 Falcon H1                    | 3B         | 3170.326s           | 2.55T/s              | 313.260s            | 0.32T/s              | 3483.586s
+Gemma 2 it                   | 2B         | 2176.875s           | 3.72T/s              | 270.906s            | 0.37T/s              | 2447.781s
+Gemma 3 it                   | 270M       | 174.386s            | 46.40T/s             | 97.553s             | 1.03T/s              | 271.939s
+Gemma 3 it                   | 1B         | 2630.358s           | 3.08T/s              | 125.694s            | 0.80T/s              | 2756.052s
+Gemma 3 it                   | 4B         | 2294.481s           | 3.53T/s              | 401.239s            | 0.25T/s              | 2695.720s
+GPT 2                        | 355M       | 34.618s             | 26.69T/s             | 44.871s             | 2.23T/s              | 79.489s
+GPT 2                        | 774M       | 95.001s             | 9.73T/s              | 83.584s             | 1.20T/s              | 178.585s
+GPT 2                        | 1.5B       | 185.614s            | 4.98T/s              | 137.003s            | 0.73T/s              | 322.617s
+Granite 3.1                  | 1B A400M   | 5345.690s           | 1.51T/s              | 178.572s            | 0.56T/s              | 5524.262s
 
 ## Models
 
@@ -30,14 +38,9 @@ MobileLLM R1                 | Instruct | 360M       | F16        | 4096        
 MobileLLM R1                 | Instruct | 950M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-950M-GGUF?show_file_info=facebook.MobileLLM-R1-950M.f16.gguf)
 Falcon3                      | Instruct | 1B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/Falcon3-1B-Instruct-GGUF?show_file_info=Falcon3-1B-Instruct.Q8_0.gguf)
 Falcon3                      | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Falcon3-3B-Instruct-GGUF?show_file_info=Falcon3-3B-Instruct.Q4_K_M.gguf)
-Falcon H1                    | Instruct | 0.5B       | BF16       | 8192        | [link](https://huggingface.co/mradermacher/Falcon-H1-0.5B-Instruct-GGUF)
-Falcon H1                    | Instruct | 1.5B       | BF16       | 8192        | [link](https://huggingface.co/mradermacher/Falcon-H1-1.5B-Instruct-GGUF?show_file_info=Falcon-H1-1.5B-Instruct.Q8_0.gguf)
+Falcon H1                    | Instruct | 0.5B       | BF16       | 8192        | [link](https://huggingface.co/unsloth/Falcon-H1-0.5B-Instruct-GGUF?show_file_info=Falcon-H1-0.5B-Instruct-BF16.gguf)
+Falcon H1                    | Instruct | 1.5B       | BF16       | 8192        | [link](https://huggingface.co/unsloth/Falcon-H1-1.5B-Instruct-GGUF?show_file_info=Falcon-H1-1.5B-Instruct-Q8_0.gguf)
 Falcon H1                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF?show_file_info=Falcon-H1-3B-Instruct-Q4_K_M.gguf)
-
-### To test
-
-**Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
------------------------------| -------- | ---------- | ---------- | ----------- | --------
 Gemma 2 it                   | Instruct | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/gemma-2-2b-it-GGUF?show_file_info=gemma-2-2b-it.Q8_0.gguf)
 Gemma 3 it                   | Instruct | 270M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-270m-it-GGUF?show_file_info=gemma-3-270m-it-F16.gguf)
 Gemma 3 it                   | Instruct | 1B         | BF16       | 8192        | [link](https://huggingface.co/unsloth/gemma-3-1b-it-GGUF?show_file_info=gemma-3-1b-it-BF16.gguf)
@@ -47,6 +50,11 @@ GPT 2                        | Instruct | 355M       | F16        | 1024        
 GPT 2                        | Instruct | 774M       | F16        | 1024        | [link](https://huggingface.co/mradermacher/gpt2-large-GGUF?show_file_info=gpt2-large.f16.gguf)
 GPT 2                        | Instruct | 1.5B       | Q8_0       | 1024        | [link](https://huggingface.co/mradermacher/gpt2-xl-GGUF?show_file_info=gpt2-xl.Q8_0.gguf)
 Granite 3.1                  | Instruct | 1B A400M   | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-1b-a400m-instruct-GGUF?show_file_info=granite-3.1-1b-a400m-instruct.f16.gguf)
+
+### To test
+
+**Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
+-----------------------------| -------- | ---------- | ---------- | ----------- | --------
 Granite 3.1                  | Instruct | 3B A800M   | Q4_K_M     | 8192        | [link](https://huggingface.co/DevQuasar/ibm-granite.granite-3.1-3b-a800m-instruct-GGUF?show_file_info=ibm-granite.granite-3.1-3b-a800m-instruct.Q4_K_M.gguf)
 Granite 3.1                  | Instruct | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-2b-instruct-GGUF?show_file_info=granite-3.1-2b-instruct.Q8_0.gguf)
 Granite 3.1                  | Hybrid   | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.2-2b-instruct-GGUF?show_file_info=granite-3.2-2b-instruct.Q8_0.gguf)
