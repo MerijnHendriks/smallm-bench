@@ -86,27 +86,27 @@ TinyLlama v1.1               | Instruct | 1.1B       | F16        | 2048        
 
 To download:
 
-- https://huggingface.co/ibm-granite/granite-4.0-350m
-- https://huggingface.co/ibm-granite/granite-4.0-1b
-- https://huggingface.co/ibm-granite/granite-4.0-h-350m
-- https://huggingface.co/ibm-granite/granite-4.0-h-1b
-- https://huggingface.co/LiquidAI/LFM2-350M
-- https://huggingface.co/LiquidAI/LFM2-700M
-- https://huggingface.co/LiquidAI/LFM2-1.2B
-- https://huggingface.co/LiquidAI/LFM2-2.6B
-- https://huggingface.co/LiquidAI/LFM2-VL-450M
-- https://huggingface.co/LiquidAI/LFM2-VL-1.6B
-- https://huggingface.co/LiquidAI/LFM2-VL-3B
-- https://huggingface.co/apple/OpenELM-270M-Instruct
-- https://huggingface.co/apple/OpenELM-450M-Instruct
-- https://huggingface.co/apple/OpenELM-1_1B-Instruct
-- https://huggingface.co/apple/OpenELM-3B-Instruct
+- https://huggingface.co/unsloth/granite-4.0-350m-GGUF?show_file_info=granite-4.0-350m-BF16.gguf
+- https://huggingface.co/unsloth/granite-4.0-1b-GGUF?show_file_info=granite-4.0-1b-Q8_0.gguf
+- https://huggingface.co/unsloth/granite-4.0-h-350m-GGUF?show_file_info=granite-4.0-h-350m-BF16.gguf
+- https://huggingface.co/unsloth/granite-4.0-h-1b-GGUF?show_file_info=granite-4.0-h-1b-Q8_0.gguf
+- https://huggingface.co/unsloth/LFM2-350M-GGUF?show_file_info=LFM2-350M-F16.gguf
+- https://huggingface.co/unsloth/LFM2-700M-GGUF?show_file_info=LFM2-700M-F16.gguf
+- https://huggingface.co/unsloth/LFM2-1.2B-GGUF?show_file_info=LFM2-1.2B-F16.gguf
+- https://huggingface.co/mradermacher/LFM2-2.6B-GGUF?show_file_info=LFM2-2.6B.Q8_0.gguf
+- https://huggingface.co/mradermacher/LFM2-VL-450M-GGUF?show_file_info=LFM2-VL-450M.f16.gguf
+- https://huggingface.co/mradermacher/LFM2-VL-1.6B-GGUF?show_file_info=LFM2-VL-1.6B.f16.gguf
+- https://huggingface.co/mradermacher/OpenELM-270M-Instruct-GGUF?show_file_info=OpenELM-270M-Instruct.f16.gguf
+- https://huggingface.co/mradermacher/OpenELM-450M-Instruct-GGUF?show_file_info=OpenELM-450M-Instruct.f16.gguf
+- https://huggingface.co/mradermacher/OpenELM-1_1B-Instruct-GGUF?show_file_info=OpenELM-1_1B-Instruct.f16.gguf
+- https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF?show_file_info=OpenELM-3B-Instruct.Q4_K_M.gguf
 
 Interesting models without GUFFs from preferred providers:
 
-- https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
-- https://huggingface.co/FreedomIntelligence/openPangu-Embedded-1B
 - https://huggingface.co/facebook/MobileLLM-Pro
+- https://huggingface.co/FreedomIntelligence/openPangu-Embedded-1B
+- https://huggingface.co/LiquidAI/LFM2-VL-3B
+- https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
 
 ## Testing environment
 
