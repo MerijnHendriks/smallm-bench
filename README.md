@@ -5,7 +5,7 @@ dGPU nor AVX/AVX2 support can run LLMs.
 
 ## Results
 
-**Model Family**             | **Params** | **Processing Time** | **Processing Speed** | **Generation Time** | **Generation Speed** | **Total Time**
+**Model**                    | **Params** | **Processing Time** | **Processing Speed** | **Generation Time** | **Generation Speed** | **Total Time**
 ---------------------------- | ---------- | ------------------- | -------------------- | ------------------- | -------------------- | --------------
 AceInstruct                  | 1.5B       | 1117.239s           | 7.24T/s              | 179.753s            | 0.56T/s              | 1296.992s
 Deepseek R1 Distill Qwen     | 1.5B       | 1168.520s           | 6.92T/s              | 184.623s            | 0.54T/s              | 1353.143s
@@ -20,10 +20,20 @@ Gemma 2                      | 2B         | 2176.875s           | 3.72T/s       
 Gemma 3                      | 270M       | 174.386s            | 46.40T/s             | 97.553s             | 1.03T/s              | 271.939s
 Gemma 3                      | 1B         | 2630.358s           | 3.08T/s              | 125.694s            | 0.80T/s              | 2756.052s
 Gemma 3                      | 4B         | 2294.481s           | 3.53T/s              | 401.239s            | 0.25T/s              | 2695.720s
+Gemma 3n                     | 2B         | 1884.329s           | 4.29T/s              | 374.232s            | 0.27T/s              | 2258.561s
 GPT 2                        | 355M       | 34.618s             | 26.69T/s             | 44.871s             | 2.23T/s              | 79.489s
 GPT 2                        | 774M       | 95.001s             | 9.73T/s              | 83.584s             | 1.20T/s              | 178.585s
 GPT 2                        | 1.5B       | 185.614s            | 4.98T/s              | 137.003s            | 0.73T/s              | 322.617s
 Granite 3.1                  | 1B A400M   | 5345.690s           | 1.51T/s              | 178.572s            | 0.56T/s              | 5524.262s
+Granite 3.1                  | 3B A800M   | 8248.371s           | 0.98T/s              | 282.961s            | 0.35T/s              | 8531.332s
+Granite 3.1                  | 2B         | 3062.854s           | 2.64T/s              | 406.325s            | 0.25T/s              | 3469.179s
+Granite 3.2                  | 2B         | 2886.372s           | 2.80T/s              | 407.316s            | 0.25T/s              | 3293.688s
+Granite 4.0                  | 350M       | 1297.645s           | 6.24T/s              | 85.256s             | 1.17T/s              | 1382.901s
+Granite 4.0                  | 1B         | 1638.892s           | 4.94T/s              | 300.521s            | 0.33T/s              | 1939.413s
+Granite 4.0                  | 3B         | 3926.248s           | 2.06T/s              | 454.000s            | 0.22T/s              | 4380.248s
+Granite 4.0 H                | 350M       | 1081.546s           | 7.48T/s              | 28.754s             | 3.48T/s              | 1110.300s
+Granite 4.0 H                | 1B         | 1372.350s           | 5.90T/s              | 126.103s            | 0.79T/s              | 1498.453s
+Granite 4.0 H                | 3B         | 2463.861s           | 3.28T/s              | 221.215s            | 0.45T/s              | 2685.076s
 
 ## Models
 
@@ -31,7 +41,7 @@ Granite 3.1                  | 1B A400M   | 5345.690s           | 1.51T/s       
 
 For each model I use different context sizes. See Models table.
 
-**Model Family**             | **Type** | **Params** | **Quants** | **Context** | **Link**
+**Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 ---------------------------- | -------- | ---------- | ---------- | ----------- | --------
 AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
 Deepseek R1 Distill Qwen     | Hybrid   | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF?show_file_info=DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf)
@@ -51,21 +61,36 @@ GPT 2                        | Instruct | 355M       | F16        | 1024        
 GPT 2                        | Instruct | 774M       | F16        | 1024        | [link](https://huggingface.co/mradermacher/gpt2-large-GGUF?show_file_info=gpt2-large.f16.gguf)
 GPT 2                        | Instruct | 1.5B       | Q8_0       | 1024        | [link](https://huggingface.co/mradermacher/gpt2-xl-GGUF?show_file_info=gpt2-xl.Q8_0.gguf)
 Granite 3.1                  | Instruct | 1B A400M   | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-1b-a400m-instruct-GGUF?show_file_info=granite-3.1-1b-a400m-instruct.f16.gguf)
+Granite 3.1                  | Instruct | 3B A800M   | Q4_K_M     | 8192        | [link](https://huggingface.co/DevQuasar/ibm-granite.granite-3.1-3b-a800m-instruct-GGUF?show_file_info=ibm-granite.granite-3.1-3b-a800m-instruct.Q4_K_M.gguf)
+Granite 3.1                  | Instruct | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-2b-instruct-GGUF?show_file_info=granite-3.1-2b-instruct.Q8_0.gguf)
+Granite 3.2                  | Hybrid   | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.2-2b-instruct-GGUF?show_file_info=granite-3.2-2b-instruct.Q8_0.gguf)
+Granite 4.0                  | Instruct | 350M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-350m-GGUF?show_file_info=granite-4.0-350m-BF16.gguf)
+Granite 4.0                  | Instruct | 1B         | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-1b-GGUF?show_file_info=granite-4.0-1b-Q8_0.gguf)
+Granite 4.0                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-micro-GGUF?show_file_info=granite-4.0-micro-Q4_K_M.gguf)
+Granite 4.0 H                | Instruct | 350M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-350m-GGUF?show_file_info=granite-4.0-h-350m-BF16.gguf)
+Granite 4.0 H                | Instruct | 1B         | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-1b-GGUF?show_file_info=granite-4.0-h-1b-Q8_0.gguf)
+Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
 
 ### To test
 
 **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 -----------------------------| -------- | ---------- | ---------- | ----------- | --------
-Granite 3.1                  | Instruct | 3B A800M   | Q4_K_M     | 8192        | [link](https://huggingface.co/DevQuasar/ibm-granite.granite-3.1-3b-a800m-instruct-GGUF?show_file_info=ibm-granite.granite-3.1-3b-a800m-instruct.Q4_K_M.gguf)
-Granite 3.1                  | Instruct | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-2b-instruct-GGUF?show_file_info=granite-3.1-2b-instruct.Q8_0.gguf)
-Granite 3.1                  | Hybrid   | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.2-2b-instruct-GGUF?show_file_info=granite-3.2-2b-instruct.Q8_0.gguf)
-Granite 4.0                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-micro-GGUF?show_file_info=granite-4.0-micro-Q4_K_M.gguf)
-Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
+LVM2                         | Instruct | 350M       | F16        | 8192        | [link](https://huggingface.co/unsloth/LFM2-350M-GGUF?show_file_info=LFM2-350M-F16.gguf)
+LVM2                         | Instruct | 700M       | F16        | 8192        | [link](https://huggingface.co/unsloth/LFM2-700M-GGUF?show_file_info=LFM2-700M-F16.gguf)
+LVM2                         | Instruct | 1.2B       | F16        | 8192        | [link](https://huggingface.co/unsloth/LFM2-1.2B-GGUF?show_file_info=LFM2-1.2B-F16.gguf)
+LVM2                         | Instruct | 2.6B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/LFM2-2.6B-GGUF?show_file_info=LFM2-2.6B.Q8_0.gguf)
+LVM2 VL                      | Instruct | 450M       | F16        | 8192        | [link](https://huggingface.co/mradermacher/LFM2-VL-450M-GGUF?show_file_info=LFM2-VL-450M.f16.gguf)
+LVM2 VL                      | Instruct | 1.6B       | F16        | 8192        | [link](https://huggingface.co/mradermacher/LFM2-VL-1.6B-GGUF?show_file_info=LFM2-VL-1.6B.f16.gguf)
 Llama 3.1 Nemotron Nano v1.1 | Hybrid   | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Llama-3.1-Nemotron-Nano-4B-v1.1-GGUF?show_file_info=Llama-3.1-Nemotron-Nano-4B-v1.1.Q4_K_M.gguf)
+Ministral                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Ministral-3b-instruct-GGUF?show_file_info=Ministral-3b-instruct.Q4_K_M.gguf)
 Llama 3.2                    | Instruct | 1B         | F16        | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF?show_file_info=Llama-3.2-1B-Instruct-F16.gguf)
 Llama 3.2                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF?show_file_info=Llama-3.2-3B-Instruct-Q4_K_M.gguf)
-OLMo                         | Instruct | 1B         | F16        | 4096        | [link](https://huggingface.co/mradermacher/OLMo-1B-0724-hf-GGUF?show_file_info=OLMo-1B-0724-hf.f16.gguf)
-OLMo 2                       | Instruct | 1B         | Q8_0       | 4096        | [link](https://huggingface.co/mradermacher/OLMo-2-0425-1B-GGUF?show_file_info=OLMo-2-0425-1B.Q8_0.gguf)
+OLMo (0724)                  | Instruct | 1B         | F16        | 4096        | [link](https://huggingface.co/mradermacher/OLMo-1B-0724-hf-GGUF?show_file_info=OLMo-1B-0724-hf.f16.gguf)
+OLMo 2 (0425)                | Instruct | 1B         | Q8_0       | 4096        | [link](https://huggingface.co/mradermacher/OLMo-2-0425-1B-GGUF?show_file_info=OLMo-2-0425-1B.Q8_0.gguf)
+OpenELM                      | Instruct | 270M       | F16        | 2048        | [link](https://huggingface.co/mradermacher/OpenELM-270M-Instruct-GGUF?show_file_info=OpenELM-270M-Instruct.f16.gguf)
+OpenELM                      | Instruct | 450M       | F16        | 2048        | [link](https://huggingface.co/mradermacher/OpenELM-450M-Instruct-GGUF?show_file_info=OpenELM-450M-Instruct.f16.gguf)
+OpenELM                      | Instruct | 1.1B       | F16        | 2048        | [link](https://huggingface.co/mradermacher/OpenELM-1_1B-Instruct-GGUF?show_file_info=OpenELM-1_1B-Instruct.f16.gguf)
+OpenELM                      | Instruct | 3B         | Q4_K_M     | 2048        | [link](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF?show_file_info=OpenELM-3B-Instruct.Q4_K_M.gguf)
 Phi 3.5 Mini                 | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Phi-3.5-mini-instruct-GGUF?show_file_info=Phi-3.5-mini-instruct.Q4_K_M.gguf)
 Phi 4 Mini                   | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF?show_file_info=Phi-4-mini-instruct-Q4_K_M.gguf)
 Phi 4 Mini                   | Thinking | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF?show_file_info=Phi-4-mini-reasoning-Q4_K_M.gguf)
@@ -84,25 +109,9 @@ SmolLM 2                     | Instruct | 1.7B       | Q8_0       | 8192        
 SmolLM 3                     | Hybrid   | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/SmolLM3-3B-GGUF?show_file_info=SmolLM3-3B-Q4_K_M.gguf)
 TinyLlama v1.1               | Instruct | 1.1B       | F16        | 2048        | [link](https://huggingface.co/mradermacher/TinyLlama_v1.1-GGUF?show_file_info=TinyLlama_v1.1.f16.gguf)
 
-To download:
+### Excluded
 
-- https://huggingface.co/unsloth/granite-4.0-350m-GGUF?show_file_info=granite-4.0-350m-BF16.gguf
-- https://huggingface.co/unsloth/granite-4.0-1b-GGUF?show_file_info=granite-4.0-1b-Q8_0.gguf
-- https://huggingface.co/unsloth/granite-4.0-h-350m-GGUF?show_file_info=granite-4.0-h-350m-BF16.gguf
-- https://huggingface.co/unsloth/granite-4.0-h-1b-GGUF?show_file_info=granite-4.0-h-1b-Q8_0.gguf
-- https://huggingface.co/unsloth/LFM2-350M-GGUF?show_file_info=LFM2-350M-F16.gguf
-- https://huggingface.co/unsloth/LFM2-700M-GGUF?show_file_info=LFM2-700M-F16.gguf
-- https://huggingface.co/unsloth/LFM2-1.2B-GGUF?show_file_info=LFM2-1.2B-F16.gguf
-- https://huggingface.co/mradermacher/LFM2-2.6B-GGUF?show_file_info=LFM2-2.6B.Q8_0.gguf
-- https://huggingface.co/mradermacher/LFM2-VL-450M-GGUF?show_file_info=LFM2-VL-450M.f16.gguf
-- https://huggingface.co/mradermacher/LFM2-VL-1.6B-GGUF?show_file_info=LFM2-VL-1.6B.f16.gguf
-- https://huggingface.co/mradermacher/OpenELM-270M-Instruct-GGUF?show_file_info=OpenELM-270M-Instruct.f16.gguf
-- https://huggingface.co/mradermacher/OpenELM-450M-Instruct-GGUF?show_file_info=OpenELM-450M-Instruct.f16.gguf
-- https://huggingface.co/mradermacher/OpenELM-1_1B-Instruct-GGUF?show_file_info=OpenELM-1_1B-Instruct.f16.gguf
-- https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF?show_file_info=OpenELM-3B-Instruct.Q4_K_M.gguf
-- https://huggingface.co/mradermacher/Ministral-3b-instruct-GGUF?show_file_info=Ministral-3b-instruct.Q4_K_M.gguf
-
-Interesting models without GUFFs from preferred providers:
+These models don't have GUFFs from the preferred providers:
 
 - https://huggingface.co/facebook/MobileLLM-Pro
 - https://huggingface.co/FreedomIntelligence/openPangu-Embedded-1B
