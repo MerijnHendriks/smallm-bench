@@ -1,7 +1,8 @@
 # Small LLM Tests
 
 For laughs and giggles I wanted to see how "well" my super weak laptop without
-dGPU nor AVX/AVX2 support can run LLMs.
+dGPU nor AVX/AVX2 support can run LLMs. I only look for speed, not output
+quality (yet).
 
 ## Results
 
@@ -34,6 +35,16 @@ Granite 4.0                  | 3B         | 3926.248s           | 2.06T/s       
 Granite 4.0 H                | 350M       | 1081.546s           | 7.48T/s              | 28.754s             | 3.48T/s              | 1110.300s
 Granite 4.0 H                | 1B         | 1372.350s           | 5.90T/s              | 126.103s            | 0.79T/s              | 1498.453s
 Granite 4.0 H                | 3B         | 2463.861s           | 3.28T/s              | 221.215s            | 0.45T/s              | 2685.076s
+
+Some observations not visible in the tests:
+
+- Mamba architectures are indeed better at memory usage, Granite 4.0 H 350M
+  took ~500MB less memory to run.
+- Smaller models (less than 2B) don't utilize the iGPU 100% all the time during
+  processing, making it more energy efficient to run.
+- Modern models like Gemma 3 and Granite 4 have constant 0-100% spikes in iGPU
+  utilizations, whereas Qwen 2.5 and MobileLLM R1 remain more steady (~50-85%). 
+- Some models like Qwen 3 only the CPU during generation.
 
 ## Models
 
@@ -144,6 +155,7 @@ GPU Driver:
 - Power profile: Performance
 
 Koboldcpp:
+- Variant: koboldcpp-oldcpu.exe
 - Version: 1.100.1
 - Backend: CLBlast (Older CPU)
 - GPU Layers: 99
@@ -166,7 +178,7 @@ Notes:
 
 Only models that fit inside 5.3GB RAM (7.8GB total, windows taking 2.5GB)
 and are available for download on [HuggingFace](https://huggingface.co) as
-GUFF are allowed.
+GUFF are allowed. I don't load mmproj files if the model has vision support.
 
 I limit myself to the following GUFF authors (in order of preference):
 
@@ -182,11 +194,11 @@ value.
 1. Boot the laptop
 2. Wait for 5 minutes to let windows do it's thing
 3. Open koboldcpp to the left, task manager to the right in performance tab
-4. Open the model config, set backend
+4. Open the model config, set backend to CLBLast (Older CPU)
 5. Run benchmark
 6. Save results using notepad and close everything.
 
 ### Limitations
 
-Due to the amount of time required to run each model, I am only able to do one
-run per model.
+Due to the amount of time required to run each model, I am only able run each
+model once.
