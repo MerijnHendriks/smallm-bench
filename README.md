@@ -100,6 +100,7 @@ To download:
 - https://huggingface.co/mradermacher/OpenELM-450M-Instruct-GGUF?show_file_info=OpenELM-450M-Instruct.f16.gguf
 - https://huggingface.co/mradermacher/OpenELM-1_1B-Instruct-GGUF?show_file_info=OpenELM-1_1B-Instruct.f16.gguf
 - https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF?show_file_info=OpenELM-3B-Instruct.Q4_K_M.gguf
+- https://huggingface.co/mradermacher/Ministral-3b-instruct-GGUF?show_file_info=Ministral-3b-instruct.Q4_K_M.gguf
 
 Interesting models without GUFFs from preferred providers:
 
