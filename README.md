@@ -84,6 +84,30 @@ SmolLM 2                     | Instruct | 1.7B       | Q8_0       | 8192        
 SmolLM 3                     | Hybrid   | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/SmolLM3-3B-GGUF?show_file_info=SmolLM3-3B-Q4_K_M.gguf)
 TinyLlama v1.1               | Instruct | 1.1B       | F16        | 2048        | [link](https://huggingface.co/mradermacher/TinyLlama_v1.1-GGUF?show_file_info=TinyLlama_v1.1.f16.gguf)
 
+To download:
+
+- https://huggingface.co/ibm-granite/granite-4.0-350m
+- https://huggingface.co/ibm-granite/granite-4.0-1b
+- https://huggingface.co/ibm-granite/granite-4.0-h-350m
+- https://huggingface.co/ibm-granite/granite-4.0-h-1b
+- https://huggingface.co/LiquidAI/LFM2-350M
+- https://huggingface.co/LiquidAI/LFM2-700M
+- https://huggingface.co/LiquidAI/LFM2-1.2B
+- https://huggingface.co/LiquidAI/LFM2-2.6B
+- https://huggingface.co/LiquidAI/LFM2-VL-450M
+- https://huggingface.co/LiquidAI/LFM2-VL-1.6B
+- https://huggingface.co/LiquidAI/LFM2-VL-3B
+- https://huggingface.co/apple/OpenELM-270M-Instruct
+- https://huggingface.co/apple/OpenELM-450M-Instruct
+- https://huggingface.co/apple/OpenELM-1_1B-Instruct
+- https://huggingface.co/apple/OpenELM-3B-Instruct
+
+Interesting models without GUFFs from preferred providers:
+
+- https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
+- https://huggingface.co/FreedomIntelligence/openPangu-Embedded-1B
+- https://huggingface.co/facebook/MobileLLM-Pro
+
 ## Testing environment
 
 ### Hardware
