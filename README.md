@@ -154,6 +154,7 @@ These models don't have GUFFs from the preferred providers:
 - https://huggingface.co/FreedomIntelligence/openPangu-Embedded-1B
 - https://huggingface.co/LiquidAI/LFM2-VL-3B
 - https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
+- https://huggingface.co/microsoft/Phi-4-mini-flash-reasoning
 
 ## Testing environment
 
