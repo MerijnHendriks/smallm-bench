@@ -81,7 +81,18 @@ Some observations not visible in the tests:
 
 ## Models
 
-See the `Context` row for the context I use during benchmarking.
+Only models that fit inside 5.3GB RAM (7.8GB total, windows taking 2.5GB)
+and are available for download on [HuggingFace](https://huggingface.co) as
+GUFF are allowed. I don't load mmproj files if the model has vision support.
+
+I limit myself to the following GUFF authors (in order of preference):
+
+1. unsloth
+2. mradermacher
+3. DevQuasar
+
+If supported context size is larger than 8192, I use 8192. If lower, I use that
+value. See the `Context` row for the context I use during benchmarking.
 
 **Organization** | **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
 ---------------- | ---------------------------- | -------- | ---------- | ---------- | ----------- | --------
@@ -200,21 +211,6 @@ Notes:
 - Windows defender is not actively running
 - Airplane mode on
 - Wifi/bluetooth off
-
-### Model selection
-
-Only models that fit inside 5.3GB RAM (7.8GB total, windows taking 2.5GB)
-and are available for download on [HuggingFace](https://huggingface.co) as
-GUFF are allowed. I don't load mmproj files if the model has vision support.
-
-I limit myself to the following GUFF authors (in order of preference):
-
-1. unsloth
-2. mradermacher
-3. DevQuasar
-
-If supported context size is larger than 8192, I use 8192. If lower, I use that
-value.
 
 ### Methodology
 
