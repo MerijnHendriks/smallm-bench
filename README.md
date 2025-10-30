@@ -198,6 +198,8 @@ These models don't have GUFFs from the preferred providers:
 - https://huggingface.co/LiquidAI/LFM2-VL-3B
 - https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
 - https://huggingface.co/microsoft/Phi-4-mini-flash-reasoning
+- https://huggingface.co/collections/ByteDance-Seed/ahn
+- https://huggingface.co/collections/ByteDance/ouro
 
 ## Testing environment
 
