@@ -257,3 +257,16 @@ Notes:
 
 Due to the amount of time required to run each model, I am only able run each
 model once.
+
+## Todo
+
+- https://huggingface.co/mradermacher/granite-3.3-2b-instruct-GGUF?show_file_info=granite-3.3-2b-instruct.Q8_0.gguf
+- https://huggingface.co/unsloth/ERNIE-4.5-0.3B-PT-GGUF?show_file_info=ERNIE-4.5-0.3B-PT-F16.gguf
+- https://huggingface.co/mradermacher/Hunyuan-0.5B-Instruct-GGUF?show_file_info=Hunyuan-0.5B-Instruct.f16.gguf
+- https://huggingface.co/mradermacher/Hunyuan-1.8B-Instruct-GGUF?show_file_info=Hunyuan-1.8B-Instruct.Q8_0.gguf
+- https://huggingface.co/mradermacher/Hunyuan-4B-Instruct-GGUF?show_file_info=Hunyuan-4B-Instruct.Q4_K_M.gguf
+- https://huggingface.co/mradermacher/Jan-v1-2509-GGUF?show_file_info=Jan-v1-2509.Q4_K_M.gguf
+- https://huggingface.co/mradermacher/Jan-v1-4B-GGUF?show_file_info=Jan-v1-4B.Q4_K_M.gguf
+- https://huggingface.co/unsloth/Jan-nano-GGUF?show_file_info=Jan-nano-Q4_K_M.gguf
+- https://huggingface.co/mradermacher/Jan-v1-edge-GGUF?show_file_info=Jan-v1-edge.Q8_0.gguf
+- https://huggingface.co/mradermacher/Lucy-GGUF?show_file_info=Lucy.Q8_0.gguf
