@@ -173,6 +173,16 @@ SmolLM 1
 - https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruct
 - https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruct
 
+SmolVLM 1
+- https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct
+- https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
+- https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct
+
+SmolVLM 2
+- https://huggingface.co/HuggingFaceTB/SmolVLM2-256M-Video-Instruct
+- https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+- https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
+
 These models don't have GUFFs from the preferred providers:
 
 - https://huggingface.co/facebook/MobileLLM-Pro
