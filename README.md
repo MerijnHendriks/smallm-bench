@@ -188,7 +188,7 @@ future:
 
 - https://huggingface.co/openai-community/gpt2
 - https://huggingface.co/facebook/MobileLLM-R1-140M
-- https://huggingface.co/HuggingFaceTB/SmolLM-135M
+- https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 
 These models don't have GUFFs from the preferred providers:
