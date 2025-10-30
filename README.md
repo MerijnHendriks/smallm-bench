@@ -55,14 +55,14 @@ OpenELM                      | 3B         | -                   | -             
 Phi 3.5 Mini                 | 4B         | -                   | -                    | -                   | -                    | -
 Phi 4 Mini                   | 4B         | -                   | -                    | -                   | -                    | -
 Phi 4 Mini                   | 4B         | -                   | -                    | -                   | -                    | -
-Qwen 2.5                     | 0.5B       | -                   | -                    | -                   | -                    | -
+Qwen 2.5                     | 0.5B       | 515.112s            | 15.71T/s             | 124.166s            | 0.81T/s              | 639.278s
 Qwen 2.5                     | 1.5B       | -                   | -                    | -                   | -                    | -
 Qwen 2.5                     | 3B         | -                   | -                    | -                   | -                    | -
 Qwen 2.5 VL                  | 3B         | -                   | -                    | -                   | -                    | -
 Qwen 2.5 Omni                | 3B         | -                   | -                    | -                   | -                    | -
-Qwen 3                       | 0.6B       | -                   | -                    | -                   | -                    | -
-Qwen 3                       | 1.7B       | -                   | -                    | -                   | -                    | -
-Qwen 3 (2507, instruct)      | 4B         | -                   | -                    | -                   | -                    | -
+Qwen 3                       | 0.6B       | 1964.106s           | 4.12T/s              | 170.627s            | 0.59T/s              | 2134.733s
+Qwen 3                       | 1.7B       | 1475.755s           | 5.48T/s              | 242.844s            | 0.41T/s              | 1718.599s
+Qwen 3 (2507, instruct)      | 4B         | 3693.251s           | 2.19T/s              | 504.004s            | 0.20T/s              | 4197.255s
 Qwen 3 (2507, thinking)      | 4B         | -                   | -                    | -                   | -                    | -
 SmallThinker                 | 4B A0.6B   | -                   | -                    | -                   | -                    | -
 SmolLM 2                     | 360M       | -                   | -                    | -                   | -                    | -
@@ -77,8 +77,7 @@ Some observations not visible in the tests:
 - Smaller models (less than 2B) don't utilize the iGPU 100% all the time during
   processing, making it more energy efficient to run.
 - Modern models like Gemma 3 and Granite 4 have constant 0-100% spikes in iGPU
-  utilizations, whereas Qwen 2.5 and MobileLLM R1 remain more steady (~50-85%). 
-- Some models like Qwen 3 only the CPU during generation.
+  utilizations, whereas Qwen 2.5 and MobileLLM R1 remain more steady (~50-85%).
 
 ## Models
 
@@ -172,7 +171,7 @@ Qwen3 VL (requires koboldcpp support)
 
 SmolLM 1
 - https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruc
+- https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruct
 
 These models don't have GUFFs from the preferred providers:
 
