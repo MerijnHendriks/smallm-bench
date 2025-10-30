@@ -183,6 +183,14 @@ SmolVLM 2
 - https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
 
+These models are too small to be considered right now, but might check in the
+future:
+
+- https://huggingface.co/openai-community/gpt2
+- https://huggingface.co/facebook/MobileLLM-R1-140M
+- https://huggingface.co/HuggingFaceTB/SmolLM-135M
+- https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
+
 These models don't have GUFFs from the preferred providers:
 
 - https://huggingface.co/facebook/MobileLLM-Pro
@@ -190,13 +198,6 @@ These models don't have GUFFs from the preferred providers:
 - https://huggingface.co/LiquidAI/LFM2-VL-3B
 - https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
 - https://huggingface.co/microsoft/Phi-4-mini-flash-reasoning
-
-These models are too small to be considered:
-
-- https://huggingface.co/openai-community/gpt2
-- https://huggingface.co/facebook/MobileLLM-R1-140M
-- https://huggingface.co/HuggingFaceTB/SmolLM-135M
-- https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 
 ## Testing environment
 
