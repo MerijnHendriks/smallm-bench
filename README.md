@@ -95,7 +95,7 @@ If supported context size is larger than 8192, I use 8192. If lower, I use that
 value. See the `Context` row for the context I use during benchmarking. I don't
 load mmproj files if the model has vision support.
 
-**Organization** | **Model**                    | **Type** | **Params** | **Quants** | **Context** | **Link**
+**Organization** | **Model**                    | **Type** | **Params** | **Quants** | **Context** | **GUFF**
 ---------------- | ---------------------------- | -------- | ---------- | ---------- | ----------- | --------
 NVIDIA           | AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
 Deepseek         | Deepseek R1 Distill Qwen     | Hybrid   | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF?show_file_info=DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf)
