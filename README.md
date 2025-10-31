@@ -10,6 +10,7 @@ quality (yet).
 ---------------------------- | ---------- | ------------------- | -------------------- | ------------------- | -------------------- | --------------
 AceInstruct                  | 1.5B       | 1117.239s           | 7.24T/s              | 179.753s            | 0.56T/s              | 1296.992s
 Deepseek R1 Distill Qwen     | 1.5B       | 1168.520s           | 6.92T/s              | 184.623s            | 0.54T/s              | 1353.143s
+ERNIE 4.5                    | 0.3B       | -                   | -                    | -                   | -                    | -
 Falcon 3                     | 1B         | 864.889s            | 9.36T/s              | 148.107s            | 0.68T/s              | 1012.996s
 Falcon 3                     | 3B         | 1803.937s           | 4.49T/s              | 315.585s            | 0.32T/s              | 2119.522s
 Falcon H1                    | 0.5B       | 661.565s            | 12.23T/s             | 131.768s            | 0.76T/s              | 793.333s
@@ -28,12 +29,16 @@ Granite 3.1                  | 1B A400M   | 5345.690s           | 1.51T/s       
 Granite 3.1                  | 3B A800M   | 8248.371s           | 0.98T/s              | 282.961s            | 0.35T/s              | 8531.332s
 Granite 3.1                  | 2B         | 3062.854s           | 2.64T/s              | 406.325s            | 0.25T/s              | 3469.179s
 Granite 3.2                  | 2B         | 2886.372s           | 2.80T/s              | 407.316s            | 0.25T/s              | 3293.688s
+Granite 3.3                  | 2B         | -                   | -                    | -                   | -                    | -
 Granite 4.0                  | 350M       | 1297.645s           | 6.24T/s              | 85.256s             | 1.17T/s              | 1382.901s
 Granite 4.0                  | 1B         | 1638.892s           | 4.94T/s              | 300.521s            | 0.33T/s              | 1939.413s
 Granite 4.0                  | 3B         | 3926.248s           | 2.06T/s              | 454.000s            | 0.22T/s              | 4380.248s
 Granite 4.0 H                | 350M       | 1081.546s           | 7.48T/s              | 28.754s             | 3.48T/s              | 1110.300s
 Granite 4.0 H                | 1B         | 1372.350s           | 5.90T/s              | 126.103s            | 0.79T/s              | 1498.453s
 Granite 4.0 H                | 3B         | 2463.861s           | 3.28T/s              | 221.215s            | 0.45T/s              | 2685.076s
+Hunyuan                      | 0.5B       | -                   | -                    | -                   | -                    | -
+Hunyuan                      | 1.8B       | -                   | -                    | -                   | -                    | -
+Hunyuan                      | 4B         | -                   | -                    | -                   | -                    | -
 LFM2                         | 350M       | -                   | -                    | -                   | -                    | -
 LFM2                         | 700M       | -                   | -                    | -                   | -                    | -
 LFM2                         | 1.2B       | -                   | -                    | -                   | -                    | -
@@ -99,8 +104,7 @@ load mmproj files if the model has vision support.
 ---------------- | ---------------------------- | -------- | ---------- | ---------- | ----------- | --------
 NVIDIA           | AceInstruct                  | Instruct | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/AceInstruct-1.5B-GGUF?show_file_info=AceInstruct-1.5B.Q8_0.gguf)
 Deepseek         | Deepseek R1 Distill Qwen     | Hybrid   | 1.5B       | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF?show_file_info=DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf)
-Meta             | MobileLLM R1                 | Instruct | 360M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-360M-GGUF?show_file_info=facebook.MobileLLM-R1-360M.f16.gguf)    
-Meta             | MobileLLM R1                 | Instruct | 950M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-950M-GGUF?show_file_info=facebook.MobileLLM-R1-950M.f16.gguf)
+Baidu            | ERNIE 4.5                    | Instruct | 0.3B       | F16        | 8192        | [link](https://huggingface.co/unsloth/ERNIE-4.5-0.3B-PT-GGUF?show_file_info=ERNIE-4.5-0.3B-PT-F16.gguf)
 Tiiuae           | Falcon 3                     | Instruct | 1B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/Falcon3-1B-Instruct-GGUF?show_file_info=Falcon3-1B-Instruct.Q8_0.gguf)
 Tiiuae           | Falcon 3                     | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Falcon3-3B-Instruct-GGUF?show_file_info=Falcon3-3B-Instruct.Q4_K_M.gguf)
 Tiiuae           | Falcon H1                    | Instruct | 0.5B       | BF16       | 8192        | [link](https://huggingface.co/unsloth/Falcon-H1-0.5B-Instruct-GGUF?show_file_info=Falcon-H1-0.5B-Instruct-BF16.gguf)
@@ -119,12 +123,16 @@ IBM              | Granite 3.1                  | Instruct | 1B A400M   | F16   
 IBM              | Granite 3.1                  | Instruct | 3B A800M   | Q4_K_M     | 8192        | [link](https://huggingface.co/DevQuasar/ibm-granite.granite-3.1-3b-a800m-instruct-GGUF?show_file_info=ibm-granite.granite-3.1-3b-a800m-instruct.Q4_K_M.gguf)
 IBM              | Granite 3.1                  | Instruct | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.1-2b-instruct-GGUF?show_file_info=granite-3.1-2b-instruct.Q8_0.gguf)
 IBM              | Granite 3.2                  | Hybrid   | 2B         | F16        | 8192        | [link](https://huggingface.co/mradermacher/granite-3.2-2b-instruct-GGUF?show_file_info=granite-3.2-2b-instruct.Q8_0.gguf)
+IBM              | Granite 3.3                  | Hybrid   | 2B         | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/granite-3.3-2b-instruct-GGUF?show_file_info=granite-3.3-2b-instruct.Q8_0.gguf)
 IBM              | Granite 4.0                  | Instruct | 350M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-350m-GGUF?show_file_info=granite-4.0-350m-BF16.gguf)
 IBM              | Granite 4.0                  | Instruct | 1B         | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-1b-GGUF?show_file_info=granite-4.0-1b-Q8_0.gguf)
 IBM              | Granite 4.0                  | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-micro-GGUF?show_file_info=granite-4.0-micro-Q4_K_M.gguf)
 IBM              | Granite 4.0 H                | Instruct | 350M       | BF16       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-350m-GGUF?show_file_info=granite-4.0-h-350m-BF16.gguf)
 IBM              | Granite 4.0 H                | Instruct | 1B         | Q8_0       | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-1b-GGUF?show_file_info=granite-4.0-h-1b-Q8_0.gguf)
 IBM              | Granite 4.0 H                | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/granite-4.0-h-micro-GGUF?show_file_info=granite-4.0-h-micro-Q4_K_M.gguf)
+Tencent          | Hunyuan                      | Hybrid   | 0.5B       | F16        | 8192        | [link](https://huggingface.co/mradermacher/Hunyuan-0.5B-Instruct-GGUF?show_file_info=Hunyuan-0.5B-Instruct.f16.gguf)
+Tencent          | Hunyuan                      | Hybrid   | 1.8B       | Q8_0       | 8192        | [link](https://huggingface.co/mradermacher/Hunyuan-1.8B-Instruct-GGUF?show_file_info=Hunyuan-1.8B-Instruct.Q8_0.gguf
+Tencent          | Hunyuan                      | Hybrid   | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Hunyuan-4B-Instruct-GGUF?show_file_info=Hunyuan-4B-Instruct.Q4_K_M.gguf
 Liquid AI        | LFM2                         | Instruct | 350M       | F16        | 8192        | [link](https://huggingface.co/unsloth/LFM2-350M-GGUF?show_file_info=LFM2-350M-F16.gguf)
 Liquid AI        | LFM2                         | Instruct | 700M       | F16        | 8192        | [link](https://huggingface.co/unsloth/LFM2-700M-GGUF?show_file_info=LFM2-700M-F16.gguf)
 Liquid AI        | LFM2                         | Instruct | 1.2B       | F16        | 8192        | [link](https://huggingface.co/unsloth/LFM2-1.2B-GGUF?show_file_info=LFM2-1.2B-F16.gguf)
@@ -135,6 +143,8 @@ NVIDIA           | Llama 3.1 Nemotron Nano v1.1 | Hybrid   | 4B         | Q4_K_M
 Meta             | Llama 3.2                    | Instruct | 1B         | F16        | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF?show_file_info=Llama-3.2-1B-Instruct-F16.gguf)
 Meta             | Llama 3.2                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF?show_file_info=Llama-3.2-3B-Instruct-Q4_K_M.gguf)
 Ministral        | Ministral                    | Instruct | 3B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Ministral-3b-instruct-GGUF?show_file_info=Ministral-3b-instruct.Q4_K_M.gguf)
+Meta             | MobileLLM R1                 | Instruct | 360M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-360M-GGUF?show_file_info=facebook.MobileLLM-R1-360M.f16.gguf)    
+Meta             | MobileLLM R1                 | Instruct | 950M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-950M-GGUF?show_file_info=facebook.MobileLLM-R1-950M.f16.gguf)
 Allen AI         | OLMo (0724)                  | Instruct | 1B         | F16        | 4096        | [link](https://huggingface.co/mradermacher/OLMo-1B-0724-hf-GGUF?show_file_info=OLMo-1B-0724-hf.f16.gguf)
 Allen AI         | OLMo 2 (0425)                | Instruct | 1B         | Q8_0       | 4096        | [link](https://huggingface.co/mradermacher/OLMo-2-0425-1B-GGUF?show_file_info=OLMo-2-0425-1B.Q8_0.gguf)
 Apple            | OpenELM                      | Instruct | 270M       | F16        | 2048        | [link](https://huggingface.co/mradermacher/OpenELM-270M-Instruct-GGUF?show_file_info=OpenELM-270M-Instruct.f16.gguf)
@@ -169,28 +179,6 @@ Qwen3 VL (requires koboldcpp support)
 - https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking
 - https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 
-SmolLM 1
-- https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruct
-
-SmolVLM 1
-- https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct
-
-SmolVLM 2
-- https://huggingface.co/HuggingFaceTB/SmolVLM2-256M-Video-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
-
-These models are too small to be considered right now, but might check in the
-future:
-
-- https://huggingface.co/openai-community/gpt2
-- https://huggingface.co/facebook/MobileLLM-R1-140M
-- https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
-- https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
-
 These models don't have GUFFs from the preferred providers:
 
 - https://huggingface.co/facebook/MobileLLM-Pro
@@ -198,6 +186,30 @@ These models don't have GUFFs from the preferred providers:
 - https://huggingface.co/LiquidAI/LFM2-VL-3B
 - https://huggingface.co/nvidia/Nemotron-H-4B-Instruct-128K
 - https://huggingface.co/microsoft/Phi-4-mini-flash-reasoning
+- https://huggingface.co/collections/ByteDance-Seed/ahn
+- https://huggingface.co/collections/ByteDance/ouro
+
+I might do these in the future, but not now:
+
+**Organization** | **Model**                    | **Type** | **Params** | **Quants** | **Context** | **GUFF**
+---------------- | ---------------------------- | -------- | ---------- | ---------- | ----------- | --------
+OpenAI           | gpt2                         | Instruct | 124M       | F16        | 1024        | [link](https://huggingface.co/mradermacher/gpt2-GGUF?show_file_info=gpt2.f16.gguf)
+Jan              | Jan v1 2509                  | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Jan-v1-2509-GGUF?show_file_info=Jan-v1-2509.Q4_K_M.gguf)
+Jan              | Jan v1                       | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Jan-v1-4B-GGUF?show_file_info=Jan-v1-4B.Q4_K_M.gguf)
+Jan              | Jan v1                       | Instruct | 2B         | Q8         | 8192        | [link](https://huggingface.co/mradermacher/Jan-v1-edge-GGUF?show_file_info=Jan-v1-edge.Q8_0.gguf)
+Jan              | Jan Nano                     | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/unsloth/Jan-nano-GGUF?show_file_info=Jan-nano-Q4_K_M.gguf)
+Jan              | Lucy                         | Instruct | 4B         | Q4_K_M     | 8192        | [link](https://huggingface.co/mradermacher/Lucy-GGUF?show_file_info=Lucy.Q8_0.gguf)
+Meta             | MobileLLM R1                 | Instruct | 140M       | F16        | 4096        | [link](https://huggingface.co/DevQuasar/facebook.MobileLLM-R1-140M-GGUF?show_file_info=facebook.MobileLLM-R1-140M.f16.gguf)
+HuggingFace      | SmolLM                       | Instruct | 135M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct)
+HuggingFace      | SmolLM                       | Instruct | 360M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruc)
+HuggingFace      | SmolLM                       | Instruct | 1.7B       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolLM-1.7B-Instruct)
+HuggingFace      | SmolLM2                      | Instruct | 135M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
+HuggingFace      | SmolVLM                      | Instruct | 256M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct)
+HuggingFace      | SmolVLM                      | Instruct | 500M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct)
+HuggingFace      | SmolVLM                      | Instruct | 1.7B       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct)
+HuggingFace      | SmolVLM2                     | Instruct | 256M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolVLM2-256M-Video-Instruct)
+HuggingFace      | SmolVLM2                     | Instruct | 500M       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct)
+HuggingFace      | SmolVLM2                     | Instruct | 2.2B       | -          | -           | [link](https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct)
 
 ## Testing environment
 
